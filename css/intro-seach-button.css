@@ -1,0 +1,100 @@
+#top_blogger_EN{background:url(https://1.bp.blogspot.com/-aYW2kwvOs5o/XXPE9Oz1dQI/AAAAAAAAQA4/telTChRciGgrLmMj7av2-LHXNVaa71O0QCLcBGAs/s1600/20190907_215359_0000.png)}
+}
+#top_blogger_EN{position:relative;display:table;width:100%;height:65vh;margin:0!important;padding:0!important;z-index:10;background:url(https://1.bp.blogspot.com/-aYW2kwvOs5o/XXPE9Oz1dQI/AAAAAAAAQA4/telTChRciGgrLmMj7av2-LHXNVaa71O0QCLcBGAs/s1600/20190907_215359_0000.png) no-repeat center center!important;background-size:cover!important;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none}
+#top_blogger_EN:before{content:'';opacity:0.5;position:absolute;top:0;right:0;bottom:0;left:0;z-index:0;background:linear-gradient(120deg,#333,#6d9698)}
+#top_blogger_EN:after{content:'';z-index:0.3;position:absolute;top:0;right:0;bottom:0;left:0;background-image:linear-gradient(transparent,rgba(51, 51, 51, 0.15) 0%,rgba(12,23,36,0.4))}
+.content_blogger_ENV{position:relative;z-index:3}/* Develop blogvnit.com */
+.centre_blogger-text_vne h2{font-size:55px;font-weight:700;color:rgba(255,255,255,.75);letter-spacing:.5px;margin:0 0 .335em;padding:0;font-family:&quot;Roboto Condensed&quot;,sans-serif;text-transform:uppercase}
+.centre_blogger-text_vne p{text-transform:capitalize;font-size:30px;font-weight:300;color:rgba(255,255,255,0.7);margin:0;padding:0}
+.centre_blogger-text_vne{margin:0 auto;text-align:center;padding:0}
+.degrees-index-hero-quote-img-cont_blogger_VN{text-align:center;max-width:215px;margin:0 auto}
+.button-down a{position:absolute;bottom:10%;left:50%;z-index:2;display:inline-block;-webkit-transform:translate(0,-50%);transform:translate(0,-50%);color:#fff;font:normal 400 20px/1 &#39;Josefin Sans&#39;,sans-serif;letter-spacing:.1em;text-decoration:none;transition:opacity .3s}/* code by www.bacsiwindows.com */
+.cont_blogger_VN{display:table-cell;vertical-align:middle;text-align:center}
+#button-down a span{position:absolute;top:-45px;left:50%;width:30px;height:30px;margin-left:-12px;border-left:1px solid #FFF;border-bottom:1px solid #fff;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:sdb05 2s infinite;animation:sdb05 2s infinite;box-sizing:border-box}
+#button-down a{animation:zoomInDownn 3s}
+@keyframes zoomInDownn {0%{opacity:0}50%{opacity:0}100%{opacity:1}}
+@-moz-keyframes zoomInDownn {0%{opacity:0}50%{opacity:0}100%{opacity:1}}
+@-webkit-keyframes zoomInDownn {0%{opacity:0}50%{opacity:0}100%{opacity:1}}
+@-webkit-keyframes sdb05{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+@keyframes sdb05{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+#button-down a span:nth-of-type(1){-webkit-animation-delay:0s;animation-delay:0s}
+#button-down a span:nth-of-type(2){-webkit-animation-delay:.2s;animation-delay:.2s}
+#button-down a span:nth-of-type(3){-webkit-animation-delay:.4s;animation-delay:.4s}
+.post-title-style2 a{z-index: 999;position:relative;background:rgba(0,0,0,0.1);color:#eee;padding:4px 15px;border-radius:3px;margin:0 5px;transition:.5s;-webkit-transition:.5s;-moz-transition:.5s;-o-transition:.5s}
+.post-title-style2 a:hover{color:#fff;background:rgba(0,0,0,0.3);z-index: 999;position:relative;}
+.tim-kiem-blogger {
+;z-index: 999;
+width: 560;
+overflow: hidden;
+position: relative;
+margin: 0 auto;
+display: block;
+}
+.tim-kiem-blogger input[type="text"] {
+;z-index: 999;
+background: rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+position: relative;
+display: inline;
+width: 100%;
+margin: 0;
+border: 1px solid rgba(0,0,0,.1) !important;
+padding: 15px 15px 15px 15px;
+font: 20px 'Roboto', sans-serif;
+color: #fff;
+}
+span.font30 {
+;z-index: 999;
+font-size: 30px;
+}
+span.font20 {
+;z-index: 999;
+font-size: 20px;
+}
+.tim-kiem-blogger input[type="submit"] {
+z-index: 999;
+position: absolute;
+right: 3px;
+background: #ff5722;
+border-radius: 4px;
+top: 6px;
+padding: 12px 25px;
+border: 0;
+color: #fff;
+font-size: 19px;
+font-weight: 300;
+}
+.tim-kiem-blogger input[type="submit"]:hover {
+background: #387AF2;
+}
+.smoothscroll-top {
+position:fixed;
+opacity:0;
+visibility:hidden;
+overflow:hidden;
+text-align:center;
+z-index:99;
+background:rgba(0,0,0,0.2);
+color:#fff;
+width:50px;
+height:50px;
+line-height:58px;
+right:25px;
+bottom:-25px;
+padding-top:2px;
+border-radius:560;
+transition:all 0.5s ease-in-out;
+transition-delay:0.2s;
+}
+.smoothscroll-top:hover {
+background:rgba(0,0,0,0.4);
+color:#fff;
+transition:all 0.2s ease-in-out;
+transition-delay:0s;
+}
+.smoothscroll-top.show {
+visibility:visible;
+cursor:pointer;
+opacity:1;
+bottom:25px;
+}
