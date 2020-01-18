@@ -1,0 +1,23 @@
+*,*:before,*:after {box-sizing:border-box}
+a{text-decoration:none;outline:none}
+.btn{display:inline-block;box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);padding:10px 20px;font-size:.81rem;-webkit-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;-o-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;margin:.375rem;border:0;-webkit-border-radius:.125rem;border-radius:.125rem;cursor:pointer;text-transform:uppercase;white-space:normal;word-wrap:break-word;color:#fff!important;}
+.text-center{text-align:center!important}
+.text-uppercase{text-transform:uppercase!important}
+.banner-cover{width:100%;-js-display:flex;display:-ms-flexbox;display:flex;-ms-flex-flow:row wrap;flex-flow:row wrap}
+.banner-widget{float:left;width:100%;min-height:350px}
+.cover{background:url(https://1.bp.blogspot.com/-5DrmDaK3Rys/XVgVcg9WAOI/AAAAAAAATD4/esta4JOLV1gYoE5O1SMQPDeCrqMFoo2xwCLcBGAs/s1600/banner-doan-nguyen-net-2019.jpg) 50% no-repeat;background-size:cover;overflow:hidden;height:100%;display:block;position:relative}
+.cover:before{position:absolute;top:0;left:0;content:&quot;&quot;;width:100%;height:100%;background-color:#122153;opacity:0.55;filter:alpha(opacity=55)}
+.cover .cover-container{transform:translate(-50%,-50%)!important;top:50%;left:50%;position:absolute;z-index:2;padding:0 15px}
+.cover .cover-container .slogan{position:relative;display:block;margin-bottom:10px;color:#fff;font-family:&#39;Roboto&#39;,sans-serif;text-transform:uppercase}
+.cover .cover-container .slogan:before{position:absolute;bottom:-20px;left:50%;content:&quot;&quot;;background:white;width:170px;height:2px;margin-left:-85px}
+.cover .cover-container p{display:block;position:relative;z-index:1;margin-bottom:30px;padding-top:24px;color:#fff;font-weight:300;line-height:1.5;text-align:center}
+.cover .cover-container .btn{position:relative;z-index:10;text-transform:uppercase;letter-spacing:1px;box-shadow:unset;border:1px solid #fff}
+.btn-outline-primary{color:#008df2;background-image:none;background-color:transparent;border-color:#008df2}
+.cover .cover-container .btn:hover{border:1px solid #008df2;background-color:#008df2}
+.cover .more{position:absolute;bottom:0;left:0;width:100%;margin-bottom:15px;color:#fff;font-size:0.75em;text-transform:uppercase;letter-spacing:10px;text-align:center}
+.cover canvas{position:absolute;top:0;left:0;z-index:1}
+@media (min-width:360px) and (max-width:415px){.cover .cover-container .slogan{font-size:1.5em;letter-spacing:2px}}
+@media (min-width:414px)and (max-width:641px){.cover .cover-container .slogan{font-size:1.6em;letter-spacing:5px}.cover .cover-container p{font-size:1.2em;letter-spacing:2px}}
+@media (min-width:640px){.cover .cover-container .slogan{font-size:2em;letter-spacing:10px}.cover .cover-container p{font-size:1.614em;letter-spacing:5px}}
+@media (min-width:320px) and (max-width:768px){.cover .cover-container{width:85%}}
+@media (min-width:769px){.cover .cover-container{width:65%}}
