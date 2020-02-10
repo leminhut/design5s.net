@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>Could Sever Design5s.net</title>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+  <div class="khung">
+<center>
+Hệ Thống <b style="color: #ee0000;">Sẽ Tự Động</b> Tải Tệp Về Máy Bạn Trên Sever Của <b><a href="https://blogvnit.com/">Blog Vnit</a></b> Bạn Vui Lòng Đợi Giây Lát Chúng Tôi Đang Chuẩn Bị Cho Bạn , Hệ thống Chúng Tôi Đang Chuẩn Bị Tệp Và sẽ tự động tải Về Sau <b style="color: #ee0000;"><span id="timecount"></span></b> giây !
+</center>
+<center>
+<a href="https://www.design5s.net/p/bao-gia-dich-vu-thiet-ke-website.html" target="_blank"><img alt="Downloand Blog Vnit" height="200" src="https://1.bp.blogspot.com/-Hyndw7wpLsk/XgjD1rQh9gI/AAAAAAAAQZM/186mIbm8tv0OdE_9cVkOlmAF5sA8WNATQCLcBGAsYHQ/s1600/Dpct.gif" width="200" /></a>
+</center>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="text-align: justify;">
+Nếu hết thời gian chờ mà tệp vẫn chưa được tải về , các bạn hãy <b>tải lại trang</b> nhé , do kết nối mạng bị yếu dẫn đến đường truyền trên sever&nbsp; không chính xác nên có thể xảy ra lỗi khi hết thời gian chờ mà vẫn chưa được tự động tải về , chúc các bạn vui vẻ</div>
+</div>
+<center>
+<a href="https://www.blogvnit.com/p/bao-gia-dich-vu-thiet-ke-website.html" target="_blank"><img alt="Downloand Blog Vnit" height="200" src="https://1.bp.blogspot.com/-EqJNHPs4p4I/XgiJtSiKxjI/AAAAAAAAQZA/pn4HF6rcqVwh9cFeUU2GSOfhdGB90Tg2QCLcBGAsYHQ/s200/animat-cloudsync.gif" width="200" /></a>
+</center>
+</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+</div>
+</div>
+	<style>
+  .khung{margin:0 0 15px;clear:both;border: 3px solid #EE0000;border-radius: 10px 10px 10px 10px;;padding: 8px 2px;}
+#button1 {
+background-color: #4CAF50;
+border: none;
+border-radius: 4px;
+color: white;
+padding: 7px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;}
+#button2 {
+background-color: #008CBA;
+border: none;
+border-radius: 4px;
+color: white;
+padding: 7px 16px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+}
+.footer-credits{display:none;}
+</style>
+<script>
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+var time = 15;
+var page = getQueryVariable("t");
+function countDown(){
+time--;
+gett("timecount").innerHTML = time;
+if(time == -1){
+window.location = page;
+}
+}
+function gett(id){
+if(document.getElementById) return document.getElementById(id);
+if(document.all) return document.all.id;
+if(document.layers) return document.layers.id;
+if(window.opera) return window.opera.id;
+}
+function init(){
+if(gett('timecount')){
+setInterval(countDown, 1000);
+gett("timecount").innerHTML = time;
+}
+else{
+setTimeout(init, 50);
+}
+}
+document.onload = init();
+$(document).ready(function(){
+ $('.link-out-btn').click(function(){
+    window.location = page;
+ });
+ $('#linkout').text(page);
+});
+function closeWindow() {
+        window.open('','_parent','');
+        window.close();
+    }
+    <script>
+	</body>
+</html>
