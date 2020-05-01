@@ -25,18 +25,18 @@ function showBoxTime(a, b) {
 function setBoxText(a) {
     switch (a) {
         case 1:
-            a = "Hiện có 100 người truy cập web này";
+            a = "Hiện có 711 người truy cập web này";
             var b = genRandNum(50, 250);
             document.getElementById("popWindow").innerHTML = a.replace("100", "<span>" + b + "</span>");
             break;
         case 2:
-            a = "Khách Hàng Đăng Ký Dịch Vụ Mới tại  CITY.";
+            a = "Khách Hàng Vừa Đặt Hàng tại  CITY.";
             b = City[Math.floor(Math.random() * City.length)];
             document.getElementById("popWindow").innerHTML = a.replace("CITY",
                 "<b>" + b + "</b>");
             break;
         case 3:
-            a = "Có 89 người đang xem", catchText3 = b = genRandNum(15, 50), document.getElementById("popWindow").innerHTML = a.replace("15", "<i>" + b + "</i>")
+            a = "Có 621 người đang xem", catchText3 = b = genRandNum(15, 50), document.getElementById("popWindow").innerHTML = a.replace("15", "<i>" + b + "</i>")
     }}
 function welcomeUser() {
     var a = 0,
