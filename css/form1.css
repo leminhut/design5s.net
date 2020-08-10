@@ -6,3 +6,7 @@
 .yeu-cau-tu-van .form-tu-van{display:inline-block;width:100%;margin-top:10px}
 .yeu-cau-tu-van .luu-y{color:red}
 .yeu-cau-tu-van input[type=submit]{background-color:#ff5400;margin-top:10px;border-radius:3px;font-weight:normal}
+.heading-home{text-align:center;margin-bottom:20px}
+.heading-home hr{width:30%;border:0;height:2px;background-image:linear-gradient(to right,rgba(0,0,0,0),rgb(76,174,80),rgba(0,0,0,0));margin:auto;opacity:0.9}
+.heading-home h3{text-transform:uppercase;position:relative;letter-spacing:1px;font-size:23px;padding:0;color:#4cae50;margin:0}
+.heading-home p {padding:0;margin:0;font-size:17px;color:#5d5d5d}
