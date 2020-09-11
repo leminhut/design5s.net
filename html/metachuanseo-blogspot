@@ -1,0 +1,116 @@
+
+   <!-- Bo the data cho web kaka hj hj -->
+<b:if cond='data:view.isError'><title>Error 404: Page Not Found</title></b:if>
+<b:if cond='data:view.isHomepage'><title><data:blog.pageTitle/></title></b:if>
+<b:if cond='!data:view.isMultipleItems'><title><data:blog.pageName/></title></b:if>
+<b:if cond='data:view.isMultipleItems'>
+<b:if cond='data:view.search.query'><title>Search : <data:view.search.query/></title></b:if>
+<b:if cond='data:view.search.label'><title><data:blog.pageName/> - <data:blog.title/></title></b:if>
+<b:if cond='data:view.isArchive'><title>Blog Archive in : <data:blog.pageName/></title></b:if>
+<b:if cond='data:view.search and !data:view.search.label and !data:view.search.query and !data:view.isArchive'><title>Blog : <data:blog.title/></title></b:if>
+</b:if>
+<!-- bo icon cho web do nha bla bla -->
+<link expr:href='data:blog.homepageUrl + &quot;favicon.ico&quot;' rel='icon' type='image/x-icon'/>
+<link href='https://1.bp.blogspot.com/-eGn9yqhmYm4/Xvd6SppmCTI/AAAAAAAARxs/0AmSegXis_g6hn2pcMFXMOXYmjYBjqiAQCLcBGAsYHQ/s320/logo.png' rel='apple-touch-icon'/>
+<link href='https://1.bp.blogspot.com/-Dkte43PqxRQ/Xvd6R2vzRjI/AAAAAAAARxg/OWX6eTLbvb4L0KLCNCyd7xR4WAXR7VKggCLcBGAsYHQ/s1600/57x57.png' rel='apple-touch-icon' sizes='57x57'/>
+<link href='https://1.bp.blogspot.com/-_KafLp5pjNk/Xvd6SIVcCBI/AAAAAAAARxk/VJYdPSGlBE0hxuiI744YBma-2DG1LMYngCLcBGAsYHQ/s1600/72x72.png' rel='apple-touch-icon' sizes='72x72'/>
+<link href='https://1.bp.blogspot.com/-L49cwbz8Cnw/Xvd6SQmbezI/AAAAAAAARxo/cwoCk92ev8gUWBJvN-6Ypaar4PbPjfMMACLcBGAsYHQ/s1600/76x76.png' rel='apple-touch-icon' sizes='76x76'/>
+<link href='https://1.bp.blogspot.com/-j3NxvlHU3w8/Xvd6RNxjLzI/AAAAAAAARxQ/fShfPyVJ5Zc_fvJiziSyEGkqCMw5ylOtwCLcBGAsYHQ/s1600/114x114.png' rel='apple-touch-icon' sizes='114x114'/>
+<link href='https://1.bp.blogspot.com/-QafVlWSLKN8/Xvd6RO6soiI/AAAAAAAARxU/o4fZxfdWlGsueIz8D3xu6OPAZ1xIprFHACLcBGAsYHQ/s1600/120x120.png' rel='apple-touch-icon' sizes='120x120'/>
+<link href='https://1.bp.blogspot.com/-7rjZHob5NCI/Xvd6RM9fUuI/AAAAAAAARxY/jDatGchTW1QoPnX9q8SCh_Xh84WOQVMRQCLcBGAsYHQ/s1600/152x152.png' rel='apple-touch-icon' sizes='152x152'/>
+<link href='https://1.bp.blogspot.com/-7Es9dfQefxw/Xvd6RxqClsI/AAAAAAAARxc/xvoaDZGNNnck4Q8pXvvR_0qnC9gPx4NeQCLcBGAsYHQ/s1600/180x180.png' rel='apple-touch-icon' sizes='180x180'/>
+<!-- chi la mang xa hoi -->
+<b:if cond='data:view.isMultipleItems'>
+<meta expr:content='data:blog.pageTitle' property='og:title'/>
+<meta expr:content='data:blog.pageTitle' property='og:image:alt'/>
+<meta expr:content='data:blog.pageTitle' name='twitter:title'/>
+<meta expr:content='data:blog.pageTitle' name='twitter:image:alt'/>
+<b:else/>
+<meta expr:content='data:blog.pageName' property='og:title'/>
+<meta expr:content='data:blog.pageName' property='og:image:alt'/>
+<meta expr:content='data:blog.pageName' name='twitter:title'/>
+<meta expr:content='data:blog.pageName' name='twitter:image:alt'/>
+</b:if>
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<!-- hinh thu nho tren mxh y ma -->
+<b:if cond='data:blog.postImageUrl'>
+<meta expr:content='data:blog.postImageUrl' property='og:image'/>
+<b:else/>
+<b:if cond='data:post.firstimageurl'>
+<meta expr:content='data:post.firstimageurl' property='og:image'/>
+<b:else/>
+<meta content='https://1.bp.blogspot.com/-NTiI2uoeJXE/Xql5UDBbs6I/AAAAAAAARLc/mgCPG18ea08l-DyZc3nihcegyGlqE9K5wCLcBGAsYHQ/s1600/DESIGN%2B5S.png' property='og:image'/>
+</b:if>
+</b:if>
+<b:if cond='data:view.isMultipleItems'>
+<meta content='https://1.bp.blogspot.com/-NTiI2uoeJXE/Xql5UDBbs6I/AAAAAAAARLc/mgCPG18ea08l-DyZc3nihcegyGlqE9K5wCLcBGAsYHQ/s1600/DESIGN%2B5S.png' name='twitter:image'/>
+<b:else/>
+<meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+</b:if>
+<b:if cond='data:view.isPost'>
+<link expr:href='resizeImage(data:blog.postImageUrl, 700)' rel='image_src'/>
+</b:if>
+<!-- Meta Description -->
+<meta expr:content='data:blog.metaDescription' name='description'/>
+<b:if cond='data:blog.metaDescription'>
+<meta expr:content='data:blog.metaDescription' property='og:description'/>
+<b:else/>
+<meta expr:content='data:post.snippet' property='og:description'/>
+</b:if>
+<meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+<!-- Meta Keywords --> 
+<meta expr:content='data:blog.title' property='article:tag'/>
+<meta content='design5s.net ✅, Template blogspot bán hàng, Template blogspot bất động sản, Template blogspot chuẩn seo, cách tạo blogspot, thiết kế blogger, Template blogspot đẹp, Template blogspot miễn phí ,Template blogspot video, Template blogspot tin tức' name='keywords'/>
+<!-- Meta Link -->
+<link expr:href='data:blog.url' rel='canonical'/>
+<link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
+<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+<!-- Meta Owner -->
+<meta content='star út' name='Author'/>
+    <link href='https://www.facebook.com/design5s.net' rel='me'/>
+<link href='https://www.facebook.com/design5s.net' rel='author'/>
+<link href='https://www.facebook.com/design5s.net/' rel='publisher'/>
+<meta content='starutblog.contact' property='fb:admins'/>
+<meta content='design5s.net' property='fb:pages'/>
+<meta content='779325369245050' property='fb:app_id'/>
+<meta content='https://www.facebook.com/design5s.net' property='article:author'/>
+<meta content='https://www.facebook.com/design5s.net' property='article:publisher'/>
+<meta content='@lminht99562302' name='twitter:site'/>
+<meta content='@lminht99562302' name='twitter:creator'/>
+<meta expr:content='data:blog.title' name='copyright'/>
+<!-- Meta Theme Color -->
+<meta content='#fff' name='theme-color'/>
+<meta content='#fff' name='msapplication-navbutton-color'/>
+<meta content='#fff' name='apple-mobile-web-app-status-bar-style'/>
+<meta content='yes' name='apple-mobile-web-app-capable'/>
+<!-- Meta Blogger Rss -->
+<meta content='blogger' name='generator'/>
+<link href='https://www.blogger.com/openid-server.g' rel='openid.server'/>
+<link expr:href='data:blog.url' rel='openid.delegate'/>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link expr:href='&quot;//www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; - Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; - RSS&quot;' rel='alternate' type='application/rss+xml'/>
+<!-- Meta Open Graph -->
+<meta content='article' property='og:type'/>
+<meta content='vi_VN' property='og:locale'/>
+<meta content='en_US' property='og:locale:alternate'/>
+<!-- Meta Robots Search -->
+<meta content='width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='all-language' http-equiv='Content-Language'/>
+<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>
+<meta content='Vietnam' name='geo.placename'/>
+<meta content='VN' name='geo.country'/>
+<meta content='vi' name='language'/>
+<meta content='global' name='target'/>
+<meta content='global' name='distribution'/>
+<meta content='general' name='rating'/>
+<meta content='1 days' name='revisit-after'/>
+<meta content='true' name='MSSmartTagsPreventParsing'/>
+<meta content='index, follow' name='googlebot'/>
+<meta content='follow, all' name='Googlebot-Image'/>
+<meta content='follow, all' name='msnbot'/>
+<meta content='follow, all' name='Yahoo'/>
+<meta content='follow, all' name='Bing'/>
+<meta content='all' name='spiders'/>
+<meta content='all' name='WEBCRAWLERS'/>
