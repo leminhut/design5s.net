@@ -1,0 +1,9 @@
+User-agent: Mediapartners-Google
+Disallow:
+User-agent: *
+Allow: /
+Disallow: /search
+Disallow: /*?updated-max=*
+Disallow: *archive.html
+
+Sitemap: https://www.design5s.net/sitemap.xml
