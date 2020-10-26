@@ -1,0 +1,56 @@
+<script>//<![CDATA[
+var _widget_settings = {
+  positions: 'bottom right',
+  support: {
+    staff: {
+      name: 'Design 5S',
+      image: 'https://1.bp.blogspot.com/-7Es9dfQefxw/Xvd6RxqClsI/AAAAAAAARxc/xvoaDZGNNnck4Q8pXvvR_0qnC9gPx4NeQCLcBGAsYHQ/s1600/180x180.png',
+      messages: 'Không biết em có thể hỗ trợ gì cho anh/chị không ạ?'
+    }
+  },
+  buttons: {
+    contact: {
+      visible: 'true',
+      id: 'https://www.design5s.net/p/chinh-sach.html',
+      messages: 'Liên hệ'
+    },
+    email: {
+      visible: 'true',
+      id: 'admin@design5s.net',
+      messages: 'Gửi email'
+    },
+    call: {
+      visible: 'true',
+      id: '0359181712',
+      messages: 'Gọi điện'
+    },
+    sms: {
+      visible: 'true',
+      id: '0359181712',
+      messages: 'Nhắn tin'
+    },
+    viber: {
+      visible: 'false',
+      id: 'vhost.vn',
+      messages: 'Chat Viber'
+    },
+    telegram: {
+      visible: 'false',
+      id: 'vHostbot',
+      messages: 'Chat Telegram'
+    },
+    zalo: {
+      visible: 'true',
+      id: '0359181712',
+      messages: 'Chat Zalo'
+    },
+    facebook: {
+      visible: 'true',
+      id: 'starutblog.contact',
+      messages: 'Chat Facebook'
+    }
+  }
+}
+//]]></script>
+  <link href="https://cdn.jsdelivr.net/gh/leminhut/contact-us/wh-contact/contact-buttons-widget.min.css" rel="stylesheet"></link>
+  <script async="async" defer="defer" src="https://cdn.jsdelivr.net/gh/leminhut/contact-us/wh-contact/contact-buttons-html.min.js"></script>
