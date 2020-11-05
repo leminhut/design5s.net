@@ -1,0 +1,46 @@
+<style>
+  
+          .mypage-alo-phone{position:fixed;right:0;bottom:0;visibility:visible;background-color:transparent;width:110px;height:110px;cursor:pointer;z-index:200000!important}
+
+.mypage-alo-ph-circle{width:90px;height:90px;top:12px;left:12px;position:absolute;background-color:transparent;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid rgba(30,30,30,.4);opacity:.1;border-color:#00BBD2;opacity:.5}
+
+.mypage-alo-ph-circle-fill{width:60px;height:60px;top:28px;left:28px;position:absolute;-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-ms-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid transparent;-webkit-transition:all .5s;-moz-transition:all .5s;-o-transition:all .5s;transition:all .5s;background-color:#00bcd4;opacity:.75!important}
+
+.mypage-alo-ph-img-circle{width:50px;height:50px;top:33px;left:33px;position:absolute;background:rgba(30,30,30,.1) url(https://4.bp.blogspot.com/-Q0mmtfMrg3Y/XO6zLlEnhlI/AAAAAAAAQc8/e1qNMly6DY4YioZcqFJCA4oL2dfWWbBwQCLcBGAs/s1600/phone-icon.png) no-repeat center center;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;border:2px solid transparent;opacity:.7;-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-ms-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;-webkit-transform-origin:50% 50%;-moz-transform-origin:50% 50%;-ms-transform-origin:50% 50%;-o-transform-origin:50% 50%;transform-origin:50% 50%;background-color:#00BBD2;background-size:70%}
+
+.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
+
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+
+.zoomIn{-webkit-animation-name:zoomIn;animation-name:zoomIn}
+
+@-webkit-keyframes zoomIn{from{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}
+
+@keyframes zoomIn{from{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}
+
+.pulse{-webkit-animation-name:pulse;animation-name:pulse}
+
+@-webkit-keyframes pulse{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+@keyframes pulse{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+.tada{-webkit-animation-name:tada;animation-name:tada}
+
+@-webkit-keyframes tada{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+@keyframes tada{from{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+    </style>
+   
+<a class='call-now' href='tel:0359181712' rel='nofollow' title='Gọi điện'>
+
+  <div class='mypage-alo-phone'>
+
+  <div class='animated infinite zoomIn mypage-alo-ph-circle'/>
+
+  <div class='animated infinite pulse mypage-alo-ph-circle-fill'/>
+
+  <div class='animated infinite tada mypage-alo-ph-img-circle'/>
+
+  </div>
+
+</a>
