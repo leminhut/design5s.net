@@ -1,5 +1,3 @@
-
-   <!-- Bo the data cho web kaka hj hj -->
 <b:if cond='data:view.isError'><title>Error 404: Page Not Found</title></b:if>
 <b:if cond='data:view.isHomepage'><title><data:blog.pageTitle/></title></b:if>
 <b:if cond='!data:view.isMultipleItems'><title><data:blog.pageName/></title></b:if>
@@ -9,7 +7,6 @@
 <b:if cond='data:view.isArchive'><title>Blog Archive in : <data:blog.pageName/></title></b:if>
 <b:if cond='data:view.search and !data:view.search.label and !data:view.search.query and !data:view.isArchive'><title>Blog : <data:blog.title/></title></b:if>
 </b:if>
-<!-- bo icon cho web do nha bla bla -->
 <link expr:href='data:blog.homepageUrl + &quot;favicon.ico&quot;' rel='icon' type='image/x-icon'/>
 <link href='https://1.bp.blogspot.com/-eGn9yqhmYm4/Xvd6SppmCTI/AAAAAAAARxs/0AmSegXis_g6hn2pcMFXMOXYmjYBjqiAQCLcBGAsYHQ/s320/logo.png' rel='apple-touch-icon'/>
 <link href='https://1.bp.blogspot.com/-Dkte43PqxRQ/Xvd6R2vzRjI/AAAAAAAARxg/OWX6eTLbvb4L0KLCNCyd7xR4WAXR7VKggCLcBGAsYHQ/s1600/57x57.png' rel='apple-touch-icon' sizes='57x57'/>
@@ -19,7 +16,6 @@
 <link href='https://1.bp.blogspot.com/-QafVlWSLKN8/Xvd6RO6soiI/AAAAAAAARxU/o4fZxfdWlGsueIz8D3xu6OPAZ1xIprFHACLcBGAsYHQ/s1600/120x120.png' rel='apple-touch-icon' sizes='120x120'/>
 <link href='https://1.bp.blogspot.com/-7rjZHob5NCI/Xvd6RM9fUuI/AAAAAAAARxY/jDatGchTW1QoPnX9q8SCh_Xh84WOQVMRQCLcBGAsYHQ/s1600/152x152.png' rel='apple-touch-icon' sizes='152x152'/>
 <link href='https://1.bp.blogspot.com/-7Es9dfQefxw/Xvd6RxqClsI/AAAAAAAARxc/xvoaDZGNNnck4Q8pXvvR_0qnC9gPx4NeQCLcBGAsYHQ/s1600/180x180.png' rel='apple-touch-icon' sizes='180x180'/>
-<!-- chi la mang xa hoi -->
 <b:if cond='data:view.isMultipleItems'>
 <meta expr:content='data:blog.pageTitle' property='og:title'/>
 <meta expr:content='data:blog.pageTitle' property='og:image:alt'/>
@@ -32,7 +28,6 @@
 <meta expr:content='data:blog.pageName' name='twitter:image:alt'/>
 </b:if>
 <meta expr:content='data:blog.title' property='og:site_name'/>
-<!-- hinh thu nho tren mxh y ma -->
 <b:if cond='data:blog.postImageUrl'>
 <meta expr:content='data:blog.postImageUrl' property='og:image'/>
 <b:else/>
@@ -60,7 +55,7 @@
 <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
 <!-- Meta Keywords --> 
 <meta expr:content='data:blog.title' property='article:tag'/>
-<meta content='design5s.net ✅, Template blogspot bán hàng, Template blogspot bất động sản, Template blogspot chuẩn seo, cách tạo blogspot, thiết kế blogger, Template blogspot đẹp, Template blogspot miễn phí ,Template blogspot video, Template blogspot tin tức' name='keywords'/>
+<meta expr:content='data:blog.metaDescription' name='keywords'/>
 <!-- Meta Link -->
 <link expr:href='data:blog.url' rel='canonical'/>
 <link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
@@ -97,7 +92,7 @@
 <!-- Meta Robots Search -->
 <meta content='width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0' name='viewport'/>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<meta content='all-language' http-equiv='Content-Language'/>
+<meta content='vi' http-equiv='Content-Language'/>
 <meta content='IE=Edge' http-equiv='X-UA-Compatible'/>
 <meta content='Vietnam' name='geo.placename'/>
 <meta content='VN' name='geo.country'/>
@@ -114,3 +109,37 @@
 <meta content='follow, all' name='Bing'/>
 <meta content='all' name='spiders'/>
 <meta content='all' name='WEBCRAWLERS'/>
+<!-- DNS preconnect -->
+<link crossorigin='' href='https://1.bp.blogspot.com' rel='preconnect'/>
+<link crossorigin='' href='https://2.bp.blogspot.com' rel='preconnect'/>
+<link crossorigin='' href='https://3.bp.blogspot.com' rel='preconnect'/>
+<link crossorigin='' href='https://4.bp.blogspot.com' rel='preconnect'/>
+<link crossorigin='' href='https://cdnjs.cloudflare.com' rel='preconnect'/>
+<link crossorigin='' href='https://www.blogger.com/' rel='preconnect'/>
+<link crossorigin='' href='https://www.design5s.com/feeds/posts/default/-/' rel='preconnect'/>
+<link crossorigin='' href='https://images.dmca.com' rel='preconnect'/>
+<link href='https://1.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='https://2.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='https://3.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='https://4.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='https://cdnjs.cloudflare.com' rel='dns-prefetch'/>
+<link href='https://www.blogger.com/' rel='dns-prefetch'/>
+<link href='https://www.design5s.net/feeds/posts/default/-/' rel='dns-prefetch'/>
+<link href='https://images.dmca.com' rel='dns-prefetch'/>
+<link href='https://fonts.google.com/' rel='dns-prefetch'/>
+<link href='https://www.jsdelivr.com/' rel='dns-prefetch'/> 
+<!--Thu vien tim kiem duoc hien thi tren google theo thong tin khai bao -->
+ <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;name&quot;:&quot;<data:view.title.escaped/>&quot;,&quot;url&quot;:&quot;<data:view.url.canonical/>&quot;,&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:&quot;https://www.design5s.net/search?q={search_term_string}&quot;,&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}</script>
+    <script type='application/ld+json'>
+    {
+      &quot;@context&quot;: &quot;https://schema.org&quot;,
+      &quot;@type&quot;: &quot;Course&quot;,
+      &quot;name&quot;: &quot;Template Blogspot Bán Hàng, Bất Động Sản, Landing Page - Design 5s&quot;,
+      &quot;description&quot;: &quot;<data:view.description/>&quot;,
+      &quot;provider&quot;: {
+        &quot;@type&quot;: &quot;Organization&quot;,
+        &quot;name&quot;: &quot;<data:view.title.escaped/>&quot;,
+        &quot;sameAs&quot;: &quot;<data:view.url.canonical/>&quot;
+      }
+    }
+    </script>
