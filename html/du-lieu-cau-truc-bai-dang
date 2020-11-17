@@ -1,0 +1,42 @@
+     <b:if cond='data:view.isPost'> 
+  <script type='application/ld+json'> {
+    &quot;@context&quot;: &quot;http://schema.org&quot;,
+    &quot;@type&quot;: &quot;BlogPosting&quot;,
+    &quot;mainEntityOfPage&quot;: {
+      &quot;@type&quot;: &quot;WebPage&quot;,
+      &quot;@id&quot;: &quot;<data:view.url.canonical/>&quot;
+    },
+    &quot;headline&quot;: &quot;<data:view.title.escaped/>&quot;,
+    &quot;description&quot;: &quot;<data:view.description/>&quot;,
+    &quot;image&quot;: {
+      &quot;@type&quot;: &quot;ImageObject&quot;,
+      &quot;url&quot;: &quot;<data:blog.postImageUrl/>&quot;
+    },
+    &quot;datePublished&quot;: &quot;<data:post.date.ISO8601/>&quot;,
+    &quot;dateModified&quot;: &quot;<data:post.lastUpdated.ISO8601/>&quot;,
+    &quot;author&quot;: {
+      &quot;@type&quot;: &quot;Person&quot;,
+      &quot;name&quot;: &quot;Star U&#769;t&quot;
+     },
+     &quot;publisher&quot;: {
+       &quot;@type&quot;: &quot;Organization&quot;,
+       &quot;name&quot;: &quot;design5s.net&quot;,
+       &quot;logo&quot;: {
+         &quot;@type&quot;: &quot;ImageObject&quot;,
+         &quot;url&quot;: &quot;https://1.bp.blogspot.com/-7Es9dfQefxw/Xvd6RxqClsI/AAAAAAAARxc/xvoaDZGNNnck4Q8pXvvR_0qnC9gPx4NeQCLcBGAsYHQ/s1600/180x180.png&quot;,
+         &quot;width&quot;: 200,
+         &quot;height&quot;: 200
+       }
+      }
+    }
+  </script>
+ <script type='application/ld+json'>
+    {
+      &quot;@context&quot;: &quot;https://schema.org/&quot;,
+      &quot;@type&quot;: &quot;ImageObject&quot;,
+      &quot;contentUrl&quot;: &quot;<data:blog.postImageUrl/>&quot;,
+      &quot;license&quot;: &quot;<data:view.url.canonical/>&quot;,
+      &quot;acquireLicensePage&quot;: &quot;https://www.design5s.net/p/chinh-sach.html&quot;
+    }
+    </script>
+    </b:if>
