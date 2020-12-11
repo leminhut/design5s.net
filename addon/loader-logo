@@ -1,0 +1,28 @@
+<!-- hiệu ứng tải trang cho website-->
+<div class='page-loader fixed fill z-top-3'>
+<div class='page-loader-inner x50 y50 md-y50 md-x50 lg-y50 lg-x50 absolute'>
+<div class='page-loader-logo' style='padding-bottom: 30px;'>
+<a href='https://www.design5s.net/'>
+<img alt='Tải Trang - Design 5s' class='header_logo header-logo' height='100' src='https://cdn.jsdelivr.net/gh/leminhut/design5s.net/svg/logo.svg' width='176'/><img alt='Tải Trang - Design 5s' class='header-logo-dark' height='100' src='https://cdn.jsdelivr.net/gh/leminhut/design5s.net/svg/logo.svg' width='176'/></a>
+</div>
+<div class='page-loader-spin'><div class='loading-spin'></div></div>
+</div>
+<style scope='scope'>
+		.page-loader{opacity: 0; transition: opacity .3s; transition-delay: .3s;
+			background-color: #fff;
+		}
+		.loading-site .page-loader{opacity: .98;}
+		.page-loader-logo{max-width: px; animation: pageLoadZoom 1.3s ease-out; -webkit-animation: pageLoadZoom 1.3s ease-out;}
+		.page-loader-spin{animation: pageLoadZoomSpin 1.3s ease-out;}
+		.page-loader-spin .loading-spin{width: 40px; height: 40px; }
+		@keyframes pageLoadZoom {
+		    0%   {opacity:0; transform: translateY(30px);}
+		    100% {opacity:1; transform: translateY(0);}
+		}
+		@keyframes pageLoadZoomSpin {
+		    0%   {opacity:0; transform: translateY(60px);}
+		    100% {opacity:1; transform: translateY(0);}
+		}
+	</style>
+</div>
+<!--end hiệu ứng tải trang cho website-->
