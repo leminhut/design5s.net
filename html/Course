@@ -1,0 +1,13 @@
+ <script type='application/ld+json'>
+    {
+      &quot;@context&quot;: &quot;https://schema.org&quot;,
+      &quot;@type&quot;: &quot;Course&quot;,
+      &quot;name&quot;: &quot;<data:view.title.escaped/>&quot;,
+      &quot;description&quot;: &quot;<data:view.description/>&quot;,
+      &quot;provider&quot;: {
+        &quot;@type&quot;: &quot;Organization&quot;,
+        &quot;name&quot;: &quot;<data:view.title.escaped/>&quot;,
+        &quot;sameAs&quot;: &quot;<data:view.url.canonical/>&quot;
+      }
+    }
+    </script>
